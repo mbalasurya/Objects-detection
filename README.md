@@ -1,10 +1,13 @@
 <!DOCTYPE>  
 <html>  
 <head>   
-<body> 
+<body>
 <h1>Object Detection</h1>
 <p>Detecting an is classified by the of the pixels in the image.
-  
+
+
+<img src="![download](https://github.com/mbalasurya/Objects-detection/assets/110713151/79dbb8bd-0d3e-4886-895c-234d3ebb54ef)">
+
 The image is segmented or classified.And the classified pixels are denotedin boxes by the coverage of boxes the object is identified.
 OpenCV is a huge open-source library for computer vision, machine learning, and image processing. OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. 
 
