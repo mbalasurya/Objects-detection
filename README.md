@@ -43,10 +43,14 @@ classlabels=[]
 file_name='labels.txt'
 with open(file_name,'rt') as fpt:
     classlabels=fpt.read().rstrip('\n').split('\n')
+
 font_scale=2
 font=cv2.FONT_HERSHEY_PLAIN
-for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):
-    cv2.rectangle(img,boxes,(255,0,0),2)
+for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):</p>
+    
+    
+    
+    <p>cv2.rectangle(img,boxes,(255,0,0),2)
     cv2.putText(img, classlabels[classInd-1], (boxes[0]+10, boxes[1]+40), font,fontScale=font_scale, color=(0, 255, 0), thickness=3)
 plt.imshow(img)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))</p>
