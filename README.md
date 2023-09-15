@@ -3,23 +3,23 @@
 <head>   
 <body>
 <h1>Object Detection</h1>
-<p>Detecting an is classified by the of the pixels in the image.
+<p>Detecting an is classified by the of the pixels in the image.</p>
 
 
-<img src="![download](https://github.com/mbalasurya/Objects-detection/assets/110713151/79dbb8bd-0d3e-4886-895c-234d3ebb54ef)">
+<p>The image is segmented or classified.And the classified pixels are denotedin boxes by the coverage of boxes the object is identified.
+OpenCV is a huge open-source library for computer vision, machine learning, and image processing. OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. </p>
 
-The image is segmented or classified.And the classified pixels are denotedin boxes by the coverage of boxes the object is identified.
-OpenCV is a huge open-source library for computer vision, machine learning, and image processing. OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. 
+<p>It can process images and videos to identify objects, faces, or even the handwriting of a human. When it is integrated with various libraries, such as Numpy which is a highly optimized library for numerical operations, then the number of weapons increases in your Arsenal i.e whatever operations one can do in Numpy can be combined with OpenCV.</p>
 
-It can process images and videos to identify objects, faces, or even the handwriting of a human. When it is integrated with various libraries, such as Numpy which is a highly optimized library for numerical operations, then the number of weapons increases in your Arsenal i.e whatever operations one can do in Numpy can be combined with OpenCV.
+<p>This OpenCV tutorial will help you learn the Image-processing from Basics to Advance, like operations on Images, Videos using a huge set of Opencv-programs and projects.</p>
 
-This OpenCV tutorial will help you learn the Image-processing from Basics to Advance, like operations on Images, Videos using a huge set of Opencv-programs and projects.
+<p>OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today's systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human.</p>
 
-OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today's systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human.</p>
 <p>import cv2
-import pandas
+import pandas</p>
 
-img =cv2.imread("download (1).jpg")
+<h2>By using this loading the image
+<p>img =cv2.imread("download (1).jpg")</p>
 
 
 import matplotlib.pyplot as plt
