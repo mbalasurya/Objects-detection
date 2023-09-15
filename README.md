@@ -15,28 +15,29 @@ OpenCV is a huge open-source library for computer vision, machine learning, and 
 
 <p>OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today's systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human.</p>
 
-<h3>importing cv2</h3>
+<h3>#importing cv2</h3>
 
 <p>import cv2
     
-<h3>importing pandas</h3>
+<h3>#importing pandas</h3>
 
 import pandas</p>
 
-<h3>loading the image</h3>
+<h3>#loading the image</h3>
 
 <p>img =cv2.imread("download (1).jpg")</p>
 
-<h3>importing matplotlib as plt</h3>
+<h3>#importing matplotlib as plt</h3>
 
 import matplotlib.pyplot as plt
 
-<h3>By using config_file and frozen_inference the object is detected by mobile_net</h3>
+<h3>#By using config_file and frozen_inference the object is detected by mobile_net</h3>
 config_file='ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
 frozen_model='frozen_inference_graph.pb'
+
+<h3>#After detect the model and inputs</h3>
+
 model=cv2.dnn_DetectionModel(frozen_model,config_file)
-
-
 model.setInputSize(320,320)
 model.setInputScale(1.0/127.5)
 model.setInputMean((127.5,127.5,127.5))
