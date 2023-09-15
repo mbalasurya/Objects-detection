@@ -18,7 +18,7 @@ OpenCV is a huge open-source library for computer vision, machine learning, and 
 <p>import cv2
 import pandas</p>
 
-<h2>By using this loading the image
+<h2>By using this loading the image</h2>
 <p>img =cv2.imread("download (1).jpg")</p>
 
 
