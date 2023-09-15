@@ -15,16 +15,23 @@ OpenCV is a huge open-source library for computer vision, machine learning, and 
 
 <p>OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today's systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human.</p>
 
+<h3>importing cv2</h3>
+
 <p>import cv2
+    
+<h3>importing pandas</h3>
+
 import pandas</p>
 
-<h2>By using this loading the image</h2>
+<h3>loading the image</h3>
+
 <p>img =cv2.imread("download (1).jpg")</p>
 
+<h3>importing matplotlib as plt</h3>
 
 import matplotlib.pyplot as plt
 
-
+<h3>By using config_file and frozen_inference the object is detected by mobile_net</h3>
 config_file='ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
 frozen_model='frozen_inference_graph.pb'
 model=cv2.dnn_DetectionModel(frozen_model,config_file)
@@ -50,10 +57,10 @@ for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):
     
     
     
-    <p>cv2.rectangle(img,boxes,(255,0,0),2)
+    cv2.rectangle(img,boxes,(255,0,0),2)
     cv2.putText(img, classlabels[classInd-1], (boxes[0]+10, boxes[1]+40), font,fontScale=font_scale, color=(0, 255, 0), thickness=3)
 plt.imshow(img)
-plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))</p>
+plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 
 
 
