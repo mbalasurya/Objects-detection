@@ -46,7 +46,7 @@ with open(file_name,'rt') as fpt:
 
 font_scale=2
 font=cv2.FONT_HERSHEY_PLAIN
-for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):</p>
+for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):
     
     
     
