@@ -2,7 +2,7 @@
 <html>  
 <head>   
 <body>
-<h1>Object Detection</h1>
+<h1>Object Detection using intel libraries</h1>
 <p>Detecting an is classified by the of the pixels in the image.</p>
 
 
