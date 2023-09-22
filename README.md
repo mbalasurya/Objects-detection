@@ -62,7 +62,7 @@ for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):
     cv2.putText(img, classlabels[classInd-1], (boxes[0]+10, boxes[1]+40), font,fontScale=font_scale, color=(0, 255, 0), thickness=3)
 plt.imshow(img)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
-
+<p>
 import cv2
 import numpy as np
 from openvino.inference_engine import IECore
@@ -113,7 +113,7 @@ if (len(classIndex)!=0):
 cap.release()
 cv2.destroyAllWindows()
 
-
+</p>
 </body>  
 </head>  
 </html>  
