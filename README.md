@@ -5,6 +5,7 @@
 <h1>Object Detection using intel libraries</h1>
 <p>Detecting an is classified by the of the pixels in the image.</p>
 
+<p>OpenCV (Open Source Computer Vision) is a library of programming functions for real time computer vision, and Intel® IPP provides the optimized functions for the OpenCV functions.</p>
 
 <p>The image is segmented or classified.And the classified pixels are denotedin boxes by the coverage of boxes the object is identified.
 OpenCV is a huge open-source library for computer vision, machine learning, and image processing. OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. </p>
