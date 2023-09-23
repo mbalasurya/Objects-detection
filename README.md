@@ -113,7 +113,6 @@ if (len(classIndex)!=0):
             cv2.rectangle(frame, boxes, (255, 0, 0), 2)
             cv2.putText(frame,classLabels [ClassInd-1], (boxes[0]+18, boxes[1]+48), font, fontScale-font_scale, color=(0, 255, 0), thickness=3)
         cv2.imshow("Object Detection Tutorial", frame)
-        
         if cv2.waitKey(2) & 0xFF== ord('q'):
             break
 cap.release()
