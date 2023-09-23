@@ -25,7 +25,7 @@ OpenCV is a huge open-source library for computer vision, machine learning, and 
     
 <h3>#importing pandas</h3>
 
-import pandas</p>
+<p>import pandas</p>
 
 <h3>#loading the image</h3>
 
