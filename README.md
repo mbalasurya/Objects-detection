@@ -87,25 +87,25 @@ net = ie.read_network(model=model_xml, weights=model_bin)
 # Get the input and output names
 <p>input_blob = next(iter(net.input_info))
 output_blob = next(iter(net.outputs))
-cap=cv2.VideoCapture("traffic.mp4")
+cap=cv2.VideoCapture("traffic.mp4")</p>
 
 
-if not cap.isOpened():
+<p>if not cap.isOpened():
     cap= cv2.VideoCapture(0)
 if not cap.isOpened():
     raise IOError("Cannot open video")
     font_scale=3
-    font = cv2.FONT_HERSHEY_PLAIN
-while True:
+    font = cv2.FONT_HERSHEY_PLAIN</p>
+<p></p>while True:
     ret, frame = cap.read()
     config_file='ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
-    frozen_model='frozen_inference_graph.pb'
-    model=cv2.dnn_DetectionModel(frozen_model,config_file)
+    frozen_model='frozen_inference_graph.pb'</p>
+    <p>model=cv2.dnn_DetectionModel(frozen_model,config_file)
     model.setInputSize(320,320)
     model.setInputScale(1.0/127.5)
     model.setInputMean((127.5,127.5,127.5))
-    model.setInputSwapRB(True)
-    classIndex, confidence, bbox= model.detect(frame)
+    model.setInputSwapRB(True)</p>
+    <p>classIndex, confidence, bbox= model.detect(frame)
     print(classIndex)
 if (len(classIndex)!=0):
     for classInd, conf, boxes in zip(classIndex. flatten(), confidece.flatten(), bbox):
@@ -116,7 +116,7 @@ if (len(classIndex)!=0):
         if cv2.waitKey(2) & 0xFF== ord('q'):
             break
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows()</p>
 
 </p>
 </body>  
