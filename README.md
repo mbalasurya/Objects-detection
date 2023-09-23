@@ -18,6 +18,10 @@ OpenCV is a huge open-source library for computer vision, machine learning, and 
 <h3>#importing cv2</h3>
 
 <p>import cv2
+
+<h3>#importing pyipp as ipp</h3>
+
+<p>import pyipp as ipp</p>
     
 <h3>#importing pandas</h3>
 
@@ -56,10 +60,12 @@ font_scale=2
 font=cv2.FONT_HERSHEY_PLAIN
 for classInd,Conf,boxes in zip(classIndex.flatten(),confidence.flatten(),bbox):
     
+<h3>#importing pyipp</h3>
+
+<p>import pyipp as ipp</p> 
     
-    
-    cv2.rectangle(img,boxes,(255,0,0),2)
-    cv2.putText(img, classlabels[classInd-1], (boxes[0]+10, boxes[1]+40), font,fontScale=font_scale, color=(0, 255, 0), thickness=3)
+cv2.rectangle(img,boxes,(255,0,0),2)
+cv2.putText(img, classlabels[classInd-1], (boxes[0]+10, boxes[1]+40), font,fontScale=font_scale, color=(0, 255, 0), thickness=3)
 plt.imshow(img)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 <p>
