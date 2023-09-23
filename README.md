@@ -85,7 +85,7 @@ ie = IECore()
 net = ie.read_network(model=model_xml, weights=model_bin)
 
 # Get the input and output names
-input_blob = next(iter(net.input_info))
+<p>input_blob = next(iter(net.input_info))
 output_blob = next(iter(net.outputs))
 cap=cv2.VideoCapture("traffic.mp4")
 
